@@ -1,46 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Architectural Information</title>
-  <style>
-    body {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .imageContainer {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    td {
-      padding: 10px;
-    }
-  </style>
+    <title>Architecture Information</title>
+    <style>
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .imageContainer {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <div class="imageContainer">
-    <img src="image.jpg" alt="Architectural Image">
-  </div>
-
-  <table>
-    <tr>
-      <td><img src="image1.jpg" alt="Image 1" width="200"></td>
-      <td><img src="image2.jpg" alt="Image 2" width="600"></td>
-      <td><img src="image3.jpg" alt="Image 3" width="200"></td>
-    </tr>
-    <tr>
-      <td><img src="image4.jpg" alt="Image 4" width="200"></td>
-      <td><img src="image5.jpg" alt="Image 5" width="600"></td>
-      <td><img src="image6.jpg" alt="Image 6" width="200"></td>
-    </tr>
-  </table>
+    <div class="container">
+        <div class="imageContainer">
+            <img src="path/to/your/image.jpg" alt="Image">
+        </div>
+        
+        <table>
+            <tr>
+                <td><img src="path/to/your/image.jpg" alt="Image" width="200"></td>
+                <td width="600">Content for middle column</td>
+                <td><img src="path/to/your/image.jpg" alt="Image" width="200"></td>
+            </tr>
+            <tr>
+                <td><img src="path/to/your/image.jpg" alt="Image" width="200"></td>
+                <td width="600">Content for middle column</td>
+                <td><img src="path/to/your/image.jpg" alt="Image" width="200"></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
